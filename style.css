@@ -1,0 +1,52 @@
+body{
+    font-family:Arial, Sans-serif;   
+    margin:0;
+    padding:0;
+    display:flex;
+    items-align:center;
+    justify-content:center;
+}
+
+#main{
+    background-color:lightgrey;    
+    height:300px;
+    width:500px;
+    items-align:center;
+    border-radius:10px; 
+}
+#label{
+    font-size:30px;    
+    text-align:center;
+    items-align:center;
+}
+#display{
+    font-family: 'Segment7', 'DS-Digital', 'Digital-7', 'Orbitron', 'Courier New', monospace;
+    margin:40px;
+    border-radius:5px;
+    background-color:lightgreen;
+    font-size:60px;
+    text-align:center;
+    items-align:center;
+}
+#control{
+    width:100%;
+    margin:auto;    
+    text-align:center;
+    items-align:center;
+}
+
+button{    
+    color:#fff;
+    width:100px;
+    border-radius:5px;    
+}
+#start{
+    background-color:green;
+}
+#stop{
+    background-color:red;
+}
+#reset{
+    background-color:blue;
+}
+
