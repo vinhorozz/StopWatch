@@ -10,10 +10,11 @@ body{
 
 #main{
     background-color:lightgrey;    
-    height:300px;
+    height:50%;
     width:500px;
     items-align:center;
     border-radius:10px; 
+    box-shadow:1px 2px 20px 5px  grey
 }
 #label{
     font-size:30px;    
@@ -22,27 +23,35 @@ body{
 }
 #display{
     font-family: 'Segment7', 'DS-Digital', 'Digital-7', 'Orbitron', 'Courier New', monospace;
-    margin:40px;
+    margin:5%;
     border-radius:5px;
     background-color:lightgreen;
-    font-size:60px;
+    font-size:50px;
     text-align:center;
     items-align:center;
 }
 #control{
-    width:100%;
+    width:90%;
     margin:auto;    
     text-align:center;
     items-align:center;
 }
 
 button{    
-    color:#fff;
-    width:100px;
+    color:#fff;    
     border-radius:5px;    
+    cursor:pointer;
+    width:30%;
+    margin:1%;
+    
+}           
+
+button:focus{
+    border:2px solid blue;
 }
+
 #start{
-    background-color:green;
+    background-color:green;    
 }
 #stop{
     background-color:red;
@@ -51,3 +60,48 @@ button{
     background-color:blue;
 }
 
+#start:hover{
+    background-color:lightgreen;
+    border:2px solid blue;    
+}
+#stop:hover{
+    background-color:orange;
+    border:2px solid blue;
+}
+
+#reset:hover{
+    background-color:lightblue;
+    border:2px solid blue;
+}
+
+@media(max-width:500px){
+    #main{
+        width:90%;
+    }
+    #display{
+        font-size:40px;        
+    }
+    #control{
+        display:flex;
+        width: 90%;
+    }
+}
+
+@media(max-width:250px){
+    #label{
+        font-size:20px
+    }
+
+    #main{
+        width:90%;   
+    }
+    #display{
+        font-size:20px;
+        
+    }
+    #control{
+        display:flex;
+        width: 90%;
+    }
+
+}
