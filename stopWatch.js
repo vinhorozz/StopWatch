@@ -1,7 +1,7 @@
 
 class StopWatch{
     #elapsedTimeInSeconds=0;
-    intervalId=null;
+    _intervalId=null;
 
     start(callback=()=>{}){
         this.intervalId=setInterval(() => {
@@ -30,7 +30,6 @@ class StopWatch{
         
         return `${StopWatch.zeroPadding(hours)}:${StopWatch.zeroPadding(minutes)}:${StopWatch.zeroPadding(segunds)}`        
     }
-
 
     static zeroPadding(originalNumber, defaultDigits=2){
         let text=String(originalNumber);
