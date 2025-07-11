@@ -6,10 +6,8 @@ class StopWatch{
     start(callback=()=>{}){
         this.intervalId=setInterval(() => {
             this.#elapsedTimeInSeconds++;
-            // console.log(this.elapsedTime);
             callback();
-        }, 1000);
-       
+        }, 1000);       
     }    
 
     stop(callback=()=>{}){
@@ -36,7 +34,7 @@ class StopWatch{
 
     static zeroPadding(originalNumber, defaultDigits=2){
         let text=String(originalNumber);
-        let formated=0;
+        let formated="0";
 
         if(text.length <defaultDigits){
             for (let index = 3; index < defaultDigits; index++) {
@@ -48,8 +46,5 @@ class StopWatch{
         }
     }
 }
-
-const sw1=new StopWatch();
-sw1.start();
 
 
